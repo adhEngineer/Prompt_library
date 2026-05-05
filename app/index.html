@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concept 2 Prompt Builder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Concept 2 Prompt Builder</h1>
+      <p class="subtitle">Construiește prompturi structurate pe modelul Context → Obiectiv → Constrângeri → Output.</p>
+
+      <form id="prompt-form">
+        <label>Rol
+          <input type="text" id="role" placeholder="ex: consultant de productivitate" required />
+        </label>
+
+        <label>Context (câte un punct pe linie)
+          <textarea id="context" rows="4" placeholder="Lucrez full-time...&#10;Am 90 min/zi..." required></textarea>
+        </label>
+
+        <label>Obiectiv măsurabil
+          <textarea id="objective" rows="3" placeholder="Propune un plan realist pe 12 săptămâni" required></textarea>
+        </label>
+
+        <label>Constrângeri (câte una pe linie)
+          <textarea id="constraints" rows="4" placeholder="Include obiective săptămânale măsurabile&#10;Max 250 de cuvinte" required></textarea>
+        </label>
+
+        <label>Format output (câte un element pe linie)
+          <textarea id="output" rows="4" placeholder="Rezumat&#10;Pași recomandați&#10;Riscuri / Limitări" required></textarea>
+        </label>
+
+        <div class="actions">
+          <button type="submit">Generează prompt</button>
+          <button type="button" id="copy-btn">Copiază</button>
+          <button type="button" id="reset-btn" class="muted">Reset</button>
+        </div>
+      </form>
+
+      <section>
+        <h2>Prompt generat</h2>
+        <pre id="result">Completează formularul și apasă „Generează prompt”.</pre>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
