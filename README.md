@@ -16,3 +16,17 @@ Scopul conceptului 2 este să reducă ambiguitatea prin:
 - obiectiv măsurabil,
 - reguli explicite,
 - format standard de răspuns.
+
+## App (MVP)
+
+Am început implementarea aplicației pentru Concept 2 în `app/`.
+
+### Rulează local
+
+Poți deschide direct `app/index.html` în browser sau porni un server static:
+
+```bash
+python3 -m http.server 8000
+```
+
+Apoi accesează `http://localhost:8000/app/`.
